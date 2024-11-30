@@ -2,3 +2,5 @@
 const arr = [31, 1, 7, 12, 27];
 
 //! Answer:
+console.log(arr.reduce((a,b)=>a+b));
+

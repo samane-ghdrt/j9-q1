@@ -12,9 +12,16 @@ const brands = [
   'sony',
 ];
 function brandsSearch(arr, query) {
-  return; //  to be completed
-}
+  const matchingBrands = [];
 
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].startsWith(query)) {
+      matchingBrands.push(arr[i]);
+    }
+  }
+
+  return matchingBrands;
+}
 console.log(brandsSearch(brands, 'a')); // result : [ 'asus', 'apple', 'acer' ]
 console.log(brandsSearch(brands, 'sa')); // result : [ 'samsung' ]
 console.log(brandsSearch(brands, 'son')); // result : [ 'sony' ]

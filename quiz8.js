@@ -3,7 +3,8 @@ const arr1 = [3, 5, 7, 2];
 const arr2 = [1, 2, 3, 4, 5];
 const arr3 = [11, 3, 1];
 function average(arr) {
-  return; // code here
+ let ave=arr.reduce((a,b)=>a+b)
+ return ave/arr.length; // code here
 }
 
 console.log(average(arr1)); // result: 4.25

@@ -7,13 +7,17 @@
 //!   Answer:
 console.log("wait 5 sec");
 
-setTimeout(() => {
-    console.log("ready?");
-  }, "5000");
-  let i=1
-setInterval(() => {
-    console.log("🚀");
-    if (i>10) {
-       clearInterval();
+setTimeout(() => console.log("ready?"), 5000);
+
+  let i=1;
+
+setTimeout( setInterval(() => {
+    if (i<=10) {
+      console.log("🚀");
+      i++;
     }
-  }, "1000")
+    else{
+      clearInterval;
+    }
+  }, 1000),5000);
+  console.clear;
